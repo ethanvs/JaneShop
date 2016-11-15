@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/detail.css">
+
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.imagezoom.min.js"></script>
+	<style>
+		div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+		div.zoomMask{position:absolute;background:url("http://demo.lanrenzhijia.com/2015/jqzoom0225/images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="container">
+			<div class="header clear">
+				 <img src="images/logo.gif" alt="">
+				 <input type="text" placeholder="请输入商品名称">
+				 <div class="changeSkin clear">
+				 	<span></span>
+				 	<span></span>
+				 	<span></span>
+				 	<span></span>
+				 	<span></span>
+				 	<span></span>
+				 </div>
+			</div>
+			<div class="nav">
+				<ul class="clear">
+					<li><a href="index.html">首页</a></li>
+					<li>
+						<a href="#">品牌</a>
+						<div class="box">
+							<div class="innerbox clear">
+								<p>品牌</p>
+								<ul>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+								</ul>
+							</div>
+							<div class="innerbox clear">
+								<p>品牌</p>
+								<ul>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">女装</a>
+						<div class="box">
+							<div class="innerbox clear">
+								<p>女装</p>
+								<ul>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+								</ul>
+							</div>
+							<div class="innerbox clear">
+								<p>女装</p>
+								<ul>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#">男装</a>
+						<div class="box">
+							<div class="innerbox clear">
+								<p>男装</p>
+								<ul>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+								</ul>
+							</div>
+							<div class="innerbox clear">
+								<p>男装</p>
+								<ul>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+									<li><a href="#">耐克</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">鞋包配饰</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+		<!-- content -->
+	<div class="content container clear">
+
+		<div class="content-left">
+			<h1>商品分类</h1>
+			<div class="content-left-show clear">
+				<h2>推荐品牌</h2>
+				<ul>
+					<li>耐克</li>
+					<li>达芙妮</li>
+					<li>安踏</li>
+					<li class="active">骆驼</li>
+				</ul>
+				<ul>
+					<li class="active">阿迪</li>
+					<li>李宁</li>
+					<li>奥康</li>
+					<li>特步</li>
+				</ul>
+			</div>
+			<div class="content-left-show clear">
+				<h2>女装</h2>
+				<ul>
+					<li>耐克</li>
+					<li>达芙妮</li>
+					<li>安踏</li>
+					<li>骆驼</li>
+				</ul>
+				<ul>
+					<li>阿迪达斯</li>
+					<li>李宁</li>
+					<li>奥康</li>
+					<li>特步</li>
+				</ul>
+			</div>
+			<div class="content-left-show clear">
+				<h2>男装</h2>
+				<ul>
+					<li>耐克</li>
+					<li>达芙妮</li>
+					<li>安踏</li>
+					<li>骆驼</li>
+				</ul>
+				<ul>
+					<li>阿迪达斯</li>
+					<li>李宁</li>
+					<li>奥康</li>
+					<li>特步</li>
+				</ul>
+			</div>
+			<div class="content-left-show clear">
+				<h2>鞋包配饰</h2>
+				<ul>
+					<li>耐克</li>
+					<li>达芙妮</li>
+					<li>安踏</li>
+					<li>骆驼</li>
+				</ul>
+				<ul>
+					<li>阿迪达斯</li>
+					<li>李宁</li>
+					<li>奥康</li>
+					<li>特步</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="content-center">
+			
+			<div class="imgbox">
+				<img class="jqzoom" src="images/pro_img/blue_one_small.jpg" rel="images/pro_img/blue_one_big.jpg">
+			</div>
+
+			<p id="show"></p>
+
+			<div class="imglist">
+				<div class="imglistbox">
+					<img src="images/pro_img/blue_one.jpg" alt="">
+					<img src="images/pro_img/blue_two.jpg" alt="">
+					<img src="images/pro_img/blue_three.jpg" alt="">
+				</div>
+				<div class="imglistbox">
+					<img src="images/pro_img/green_one.jpg" alt="">
+					<img src="images/pro_img/green_two.jpg" alt="">
+				</div>
+				<div class="imglistbox">
+					<img src="images/pro_img/yellow_one.jpg" alt="">
+					<img src="images/pro_img/yellow_two.jpg" alt="">
+				</div>
+				
+			</div>
+			
+			<div class="produce clear">
+				<span class="active">产品属性</span>
+				<span>产品尺码表</span>
+				<span>产品介绍</span>
+			</div>
+			<div class="produce-con">
+				<p>1.产品属性沙发快乐的积分开了大撒风景卡拉斯加福禄寿爱分解落实到房间爱思考了福建按打款了机房阿卡飞机都拉上飞机离开时按打款了机房阿卡飞机都拉上飞机了机房阿卡飞机都拉上飞机离开时</p>
+				<p>2.产品尺码表沙发快乐的积分开了大撒风景卡拉斯加福禄寿爱分解落实到房间爱思考了福建按打款了机房阿卡飞机都发快乐的积分开了大撒风景卡拉斯加福禄寿爱分解落实到房间爱思考了福建按打款了机房阿卡飞机都拉上飞机离开时</p>
+				<p>3.产品介绍沙发快乐的积分开了大撒风景卡拉斯加福禄寿爱分解落实到房间爱思考了福建按打款了机房阿绍沙发快乐的积分开了大撒风景卡拉斯加福禄寿爱分解落实到房间爱思考了福建按打款了机房阿卡飞机都拉上飞机离开时</p>
+			</div>
+		</div>
+
+		
+
+		<div class="content-right">
+			<h3>免烫高支棉条纹衬衣</h3>
+			<p>全新精品免烫高支棉条纹衬衣全新精品免烫高支棉条纹衬衣全新精品免烫高支棉条纹衬衣全新精品免烫高支棉条纹衬衣全新精品免烫高支棉条纹衬衣全新精品免烫高支棉条纹衬衣全
+			新精品免烫高支棉条纹衬衣</p>
+			<p>价&nbsp;&nbsp;格: <del>379.00元</del></p>
+			<p class="sale">促&nbsp;&nbsp;销：<span>200.00</span>元</p>
+			<p class="color">颜&nbsp;&nbsp;色：<span>未选择</span></p>
+			<div class="selcolor">
+				<img src="images/pro_img/blue.jpg" alt="">
+				<img src="images/pro_img/green.jpg" alt="">
+				<img src="ima	ges/pro_img/yellow.jpg" alt="">
+			</div>
+			<p class="sel">尺寸：&nbsp;&nbsp;<span>未选择</span></p>
+			<div class="size clear">
+				<span>S</span>
+				<span>L</span>
+				<span>SL</span>
+				<span>LL</span>
+			</div>
+			<p class="num">数量：</p>
+			<select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			<p class="price">总&nbsp;&nbsp;计：200元</p>
+			<p>给商品评分：</p>
+			<div class="star">
+				<ul class="clear">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="star-img"></div>
+			</div>
+			
+			<div class="mark"></div>
+			<p class="car"></p>
+		</div>
+
+	</div>
+
+
+	<div class="showImg">
+			<div class="showbox">
+				<img src="images/pro_img/blue_one_small.jpg" alt="">
+				<p class="clear">
+					<span>介绍文字</span>
+					<span>close or Esc Key</span>
+				</p>
+			</div>
+			<!-- <div class="prev">&lt;</div>
+			<div class="next">&gt;</div> -->
+		</div>
+
+
+	<div class="footer">
+		<p>Copyright&copy;2009 - 2012 JaneShop Ine.</p>
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
