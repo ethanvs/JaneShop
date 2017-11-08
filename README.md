@@ -12,8 +12,8 @@
 
 ### 首页效果(进入显示)
 
-![](./images/design_index)
+![design_index](./images/design_index.png)
 
 ### 详情页效果(点击男装显示)
 
-![](./images/design_detail)
+![design_detail](./images/design_detail.png)
